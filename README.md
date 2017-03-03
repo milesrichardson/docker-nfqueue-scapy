@@ -2,7 +2,7 @@
 
 Docker container with an example python script to listen for packets on
 a netfilter queue and manipulate them with scapy. You can listrn on any queue number, and you can push packets into the queue from any iptables rule. 
-This container gives you a powerful prototyping and debugging tool for network flows.
+This container gives you a powerful prototyping and debugging tool for monitoring, manipulating, dropping, accepting, requeing, or forwarding network packets in python.
 You can read from a queue on the host with `--net=host --cap-add=NET_ADMIN`.
  Or, you can run it within another container's namespace to listen
 for packets on an nfqueue in that container's network namespace.
