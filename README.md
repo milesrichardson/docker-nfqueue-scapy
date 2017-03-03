@@ -1,9 +1,10 @@
 # docker-nfqueue-scapy
 
 Docker container with an example python script to listen for packets on
-a netfilter queue and manipulate them with scapy. You can run the container
-with `--net=host --cap-add=NET_ADMIN` to listen on a netfilter queue in the
-host namespace. Or, you can run it within another container's namespace to listen
+a netfilter queue and manipulate them with scapy. You can push packets into the from any iptables rule. 
+This container gives you a powerful prototyping and debugging tool for network flows.
+You can read from a queue on the host with `--net=host --cap-add=NET_ADMIN`.
+ Or, you can run it within another container's namespace to listen
 for packets on an nfqueue in that container's network namespace.
 
 This container includes a full installation of scapy and python netfilter queue
